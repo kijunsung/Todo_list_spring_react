@@ -130,7 +130,9 @@ function App() {
           authToken ? (
             <button onClick={handleLogout}>Logout</button>
           ) : (
-            <GoogleLogin onSuccess={handleLoginSuccess} onError={handleLoginError} />
+            <GoogleLogin onSuccess={handleLoginSuccess} onError={handleLoginError}>
+
+            </GoogleLogin>
           )
         }
       </div>
@@ -150,7 +152,7 @@ function App() {
           )
         }
       </main>
-      <TodoForm onAddTodo={handleAddTodo}/>
+      
     </div>
   )
 }

@@ -22,8 +22,8 @@ const TodoForm: React.FC<TodoFormProps> = (props: TodoFormProps) => {
 
   return (
     <form onSubmit={handleSubmit} aria-label="Add new Taks">
-      <input type="text" value={text} onChange={handleOnChange} placeholder="add Task" aria-label="add Task" />
-      <button type="submit">add Task</button>
+      <input type="text" value={text} onChange={handleOnChange} placeholder="일정을 입력하세요" aria-label="add Task" />
+      <button type="submit">일정 추가</button>
     </form>
   )
 }

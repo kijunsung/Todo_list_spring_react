@@ -1,8 +1,6 @@
 import type { Todo } from "../types/Todo";
 import apiClient from "./apiClient";
 
-
-
 export const getAllTodos = async (): Promise<Todo[]> => {
   try {
     const response = await apiClient.get<Todo[]>('/todos');
